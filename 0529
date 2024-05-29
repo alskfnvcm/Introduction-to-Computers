@@ -1,0 +1,511 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/alskfnvcm/Introduction-to-Computers/blob/main/0529\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i=range(5)"
+      ],
+      "metadata": {
+        "id": "Ic1U-BW2txO7"
+      },
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(i))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vEEXh5AJuypA",
+        "outputId": "36929db8-c951-411a-c9c2-608fbab508ca"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'range'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "37vOXx--u296",
+        "outputId": "7133fb74-a598-47f7-a9cd-b015150a8bc2"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "range(0, 5)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(list(i))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bMtc4Bgwu5sI",
+        "outputId": "0cdf6fc5-5315-43f0-b5bf-1a4baada27e8"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[0, 1, 2, 3, 4]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "j=range(10)"
+      ],
+      "metadata": {
+        "id": "vPpZT2JNvDS7"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(list(j))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ADKkr1ulvGYt",
+        "outputId": "9e75cfc2-d56a-45a4-a1d7-63c3c68e31f2"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=range(3,8)\n",
+        "print(list(a))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EVc38mEcvLK8",
+        "outputId": "bb0e923c-5cdf-4843-dc22-d2be424a8a13"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[3, 4, 5, 6, 7]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b=range(-2,4)\n",
+        "print(list(b))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "W6vr53QovT2W",
+        "outputId": "76539876-b085-4657-f6c6-3bc70445c2d7"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[-2, -1, 0, 1, 2, 3]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list1=(range(1,11))\n",
+        "print(list(list1))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fA4AWYfuvbeH",
+        "outputId": "92ba535a-c580-4e8b-c8c5-d05d5f600b74"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "c=range(3,8,1)\n",
+        "print(list(c))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hafydmGHvkTg",
+        "outputId": "2fd034e1-8de4-46d6-c571-c617364b77c2"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[3, 4, 5, 6, 7]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "d=range(8,3,-1)\n",
+        "print(list(d))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dBzta5vAv1yx",
+        "outputId": "b9efeeee-a75e-435a-df6e-581f14c6d342"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[8, 7, 6, 5, 4]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "e=range(8,3,-2)\n",
+        "print(list(e))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0jvNS4Dhv-Nr",
+        "outputId": "601d2a12-9b66-4569-c4b5-8d73db6194bf"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[8, 6, 4]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "f=range(9)\n",
+        "print(list(f))\n",
+        "g=range(1,10)\n",
+        "print(list(g))\n",
+        "h=range(1,10,2)\n",
+        "print(list(h))\n",
+        "i=range(10,1,-2)\n",
+        "print(list(i))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PdQmH4tgwNFD",
+        "outputId": "bfc1863b-1679-4613-8d73-569a6416d52b"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[0, 1, 2, 3, 4, 5, 6, 7, 8]\n",
+            "[1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+            "[1, 3, 5, 7, 9]\n",
+            "[10, 8, 6, 4, 2]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "test=int(input(\"請輸入一個正整數\"))\n",
+        "for m in range(1,test+1,2):\n",
+        "  print(m,end=\"\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CXzVUrd6w7q4",
+        "outputId": "f4ed5c64-66c6-4fa5-ce59-65f17bdfb457"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "請輸入一個正整數10\n",
+            "13579"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for n in range(3):\n",
+        "  print(n,end=\"\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pVp8D2pExa8F",
+        "outputId": "f0c55438-b3ba-48c9-bd16-d143d15fc680"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "012"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sum=0\n",
+        "for n in range(3):\n",
+        "  sum=sum+n\n",
+        "print(sum)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3kC4DerJzVI1",
+        "outputId": "901a61b3-c0ef-40e8-d40d-6e953012c0d3"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sum=0\n",
+        "for n in range(5):\n",
+        "  sum=sum+n\n",
+        "print(sum)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "z0TpGN9pzblM",
+        "outputId": "6d47b1f8-25bd-4b31-939d-42069e122bc0"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sum=int(input(\"請輸入一個正整數\"))\n",
+        "for n in range(sum):\n",
+        "    sum=sum+n\n",
+        "print(sum)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hrHsoea4zgcB",
+        "outputId": "cfd984f6-fb50-4faa-c88d-62fceff284ae"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "請輸入一個正整數10\n",
+            "55\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sum=int(input(\"請輸入一個正整數\"))\n",
+        "for n in range(sum):\n",
+        "    sum=sum+n\n",
+        "print(sum)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kXjMdG7vzi55",
+        "outputId": "d8b92177-704d-4e85-d268-04853b8d2118"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "請輸入一個正整數50\n",
+            "1275\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sum=0\n",
+        "sum=int(input(\"請輸入一個正整數\"))\n",
+        "for n in range(sum):\n",
+        "    sum=sum+1+n\n",
+        "    print(\"1到{}的整數和為:{}\".format(n+1,sum-10))\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6XK6dg9kztR-",
+        "outputId": "a2bb9503-07e1-4b75-a35d-e7409f548ad2"
+      },
+      "execution_count": 97,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "請輸入一個正整數10\n",
+            "1到1的整數和為:1\n",
+            "1到2的整數和為:3\n",
+            "1到3的整數和為:6\n",
+            "1到4的整數和為:10\n",
+            "1到5的整數和為:15\n",
+            "1到6的整數和為:21\n",
+            "1到7的整數和為:28\n",
+            "1到8的整數和為:36\n",
+            "1到9的整數和為:45\n",
+            "1到10的整數和為:55\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
